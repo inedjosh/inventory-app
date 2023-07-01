@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* variables */
+  :root {
+    --primary-bg: #202020;
+    --dark-gray: #282828;
+    --green: #197741;
+    --green-10: #259d58;
+    --primary-color: #982270;
+    --primary-color-10: #bf3f94;
+    --primary-color-20: #6e0a4c;
+    --yellow: #ffc700;
+    --gray: #d9d9d9;
+    --red: #f91414;
+  }
+  body {
+    font-family: "Fira", sans-serif;
+    @apply text-black;
+  }
+
+  .base-link {
+    @apply text-primary underline;
+  }
+
+  h1,
+  .h1 {
+    @apply text-3xl font-normal;
+  }
+  h2,
+  .h2 {
+    @apply text-2xl font-normal;
+  }
+  h3,
+  .h3 {
+    @apply text-xl font-normal;
+  }
+  a:focus,
+  button:focus,
+  [data-highlighted]:focus {
+    outline: none;
+  }
+}
+
+@layer utilities {
+  .page-x-padding {
+    @apply px-4 lg:px-8;
+  }
+  .truncate-text {
+    @apply text-ellipsis whitespace-nowrap overflow-hidden;
+  }
+}
+
+@font-face {
+  font-family: "Fira";
+  src: url("assets/fonts/FiraSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Fira";
+  src: url("assets/fonts/FiraSans-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Fira";
+  src: url("assets/fonts/FiraSans-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Fira";
+  src: url("assets/fonts/FiraSans-Medium.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Fira";
+  src: url("assets/fonts/FiraSans-SemiBold.ttf") format("truetype");
+  font-weight: 500;
+}

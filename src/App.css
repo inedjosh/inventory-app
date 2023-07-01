@@ -1,0 +1,13 @@
+body {
+  font-family: Fira;
+}
+
+.heading-text {
+  font-weight: 400;
+  font-size: 36px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 14px;
+}
