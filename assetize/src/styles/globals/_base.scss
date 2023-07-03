@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+  font-feature-settings: 'ss03' on, 'ss02' on, 'ss01' on, 'salt' on;
+}
+*:focus {
+  outline: 0;
+}
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
